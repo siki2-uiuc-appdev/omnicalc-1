@@ -2,13 +2,13 @@
 
 <dl>
   <dt>APR</dt>
-  <dd>5.4200%</dd>
+  <dd><%= @apr %></dd>
   <dt>Number of years</dt>
-  <dd>10</dd>
+  <dd><%= @years %></dd>
   <dt>Principal</dt>
-  <dd>10,000.00</dd>
+  <dd><%= @principal.to_fs(:currency) %></dd>
   <dt>Payment</dt>
-  <dd>108.13</dd>
+  <dd><%= @payment %></dd>
 </dl>
 
 <a href="/payment/new">Calculate another payment</a>
